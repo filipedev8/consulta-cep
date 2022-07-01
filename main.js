@@ -1,6 +1,6 @@
 const cep = document.getElementById('cep');
 const buscarCep = document.getElementById('btnBuscar'); 
-const btnDarkLight = document.querySelector('.btn-darkLight')
+const btnDarkLight = document.querySelector('.btn-darkLight');
 
 buscarCep.addEventListener('click', () => {
     const logradouro = document.getElementById('logradouro');
@@ -11,7 +11,7 @@ buscarCep.addEventListener('click', () => {
 
     if(cep.value === "") {
         return alert('Precha o Campo "Digite aqui seu CEP" e tente novamente :)')
-    } else if(cep.value.length < 8) {
+    } else if(cep.value.length < 8 ) {
         return alert('Formato de CEP inválido.')
     }
 
