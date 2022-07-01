@@ -15,8 +15,6 @@ buscarCep.addEventListener('click', () => {
         return alert('Formato de CEP inválido.')
     }
 
-    
-
     const request = axios.get(`https://viacep.com.br/ws/${cep.value}/json/`).then(({data}) => {
         if(data?.erro){
             return alert('O CEP Informado Não foi encontrado')  
@@ -27,7 +25,7 @@ buscarCep.addEventListener('click', () => {
             localidade.value = data.localidade
             estado.value = data.uf
         }
-        document.getElementById('flex').style.display = "flex";
+        document.querySelector('.row-result').style.display = "flex";
     })
 });
 

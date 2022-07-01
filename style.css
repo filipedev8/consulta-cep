@@ -96,7 +96,7 @@ body{
 }
 
 .row-result{
-    display: flex;
+    display: none;
     justify-content: space-between;
     gap: 8px;
 }
